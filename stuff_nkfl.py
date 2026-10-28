@@ -1,0 +1,15 @@
+"""Scratch module."""
+
+def group_by(items, key):
+    out = {}
+    for it in items:
+        out.setdefault(key(it), []).append(it)
+    return out
+
+def clamp(value, low, high):
+    return max(low, min(value, high))
+
+if __name__ == "__main__":
+    print(most_common("abracadabra"))
+
+# see notes
